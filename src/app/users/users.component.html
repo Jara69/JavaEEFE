@@ -1,0 +1,23 @@
+<div class="container"  >
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">id</th>
+      <th scope="col">username</th>
+      <th scope="col">Handle</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users" >
+      <th scope="row">1</th>
+      <td>{{user.id}}</td>
+      <td>{{user.jmeno}}</td>
+      <button class="btn" (click)="detail(user.id)">Detail</button>
+
+      <button class="btn" (click)="delete(user.id)">Delete</button>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
