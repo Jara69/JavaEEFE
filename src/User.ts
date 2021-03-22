@@ -1,6 +1,5 @@
-
 export interface User {
   id: number;
-  jmeno: string;
-  heslo: string;
+  username: string;
+  password: string;
 }
